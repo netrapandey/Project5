@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive blog application">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="script.js" as="script">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">BlogSpace</h1>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main container">
+        <section class="featured-post">
+            <article class="post-card large">
+                <img src="https://source.unsplash.com/random/800x400/?nature" loading="lazy" alt="Featured post" class="post-image">
+                <div class="post-content">
+                    <span class="post-category">Featured</span>
+                    <h2 class="post-title">The Future of Web Development</h2>
+                    <p class="post-excerpt">Exploring the latest trends and technologies shaping the future of web development in 2023 and beyond.</p>
+                    <div class="post-meta">
+                        <span class="post-author">By Jane Doe</span>
+                        <span class="post-date">May 15, 2023</span>
+                    </div>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </article>
+        </section>
+
+        <section class="blog-grid">
+            <h2 class="section-title">Latest Articles</h2>
+            <div class="grid-container" id="blogPosts">
+                <!-- Posts will be loaded dynamically via JavaScript -->
+            </div>
+            <button class="load-more" id="loadMore">Load More Articles</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 BlogSpace. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter"><span class="icon-twitter"></span></a>
+                <a href="#" aria-label="Facebook"><span class="icon-facebook"></span></a>
+                <a href="#" aria-label="Instagram"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
